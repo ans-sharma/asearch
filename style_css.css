@@ -1,0 +1,132 @@
+* {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #201e1e;
+    color: white;
+}
+.mainHead {
+    position: absolute;
+    left: 50%;
+    margin-left: -25%;
+    background-color: rgb(50, 50, 50);
+    width: 50%;
+    height: 30px;
+    border-radius: 100px;
+    text-align: center;
+    padding-top: 5px;
+    font-size: x-large;
+    font-weight: bold;
+    color: white;
+}
+
+/* SEARCH CSS */
+.inTitle {
+    position: relative;
+    top: 70px;
+    right: auto;
+    left: auto;
+    bottom: auto;
+}
+.search_inTitle[type=text] {
+    width: 130px;
+    height: 20px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+    background-color: teal;
+    border-radius: 50px;
+
+}
+.search_inTitle[type=text]:hover {
+    width: 50%;
+}
+
+.search_inTitle[type=text]:focus {
+  width: 50%;
+}
+
+.check_inTitle{
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 24px;
+}
+
+.check_inTitle input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+/*  SLIDER STYLE */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: teal;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 15px;
+    width: 15px;
+    left: 4px;
+    bottom: 4px;
+    background-color: black;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+
+  input:checked + .slider {
+    background-color: greenyellow;
+  }
+
+  input:focus + .slider {
+    box-shadow: 0 0 1px gray;
+  }
+
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+  /* BUTTON CSS */
+.button {
+  position: relative;
+  top: -1px;
+  background-color: teal;
+  height: 25px;
+  width: 50px;
+  border-radius: 25px;
+  box-shadow: 0 1px #999999;
+  color: white;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: rgb(32, 32, 32);
+}
+
+.inText{
+  position: relative;
+  top: 60px;
+}
+
+.search_inText {
+  position: relative;
+  bottom: 23px;
+  left: 140px;
+}
